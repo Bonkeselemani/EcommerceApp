@@ -1,8 +1,8 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
-
-<div class="container mx-auto px-4">
+@Html.Partial("_Banner")
+<div class="container mx-auto px-4 ">
     <div class=" flex items-center justify-center py-4 md:py-8 flex-wrap mx-auto p-4 ">
         <button type="button" class="text-orange-700 hover:text-white border border-orange-600 bg-white hover:bg-orange-700 focus:ring-4 focus:outline-none focus:ring-orange-300 rounded-full text-base font-medium px-5 py-2.5 text-center mr-3 mb-3 dark:border-orange-500 dark:text-orange-500 dark:hover:text-white dark:hover:bg-orange-500 dark:bg-gray-900 dark:focus:ring-blue-800">All categories</button>
         <button type="button" class="text-orange-700 hover:text-white border border-orange-600 bg-white hover:bg-orange-700 focus:ring-4 focus:outline-none focus:ring-orange-300 rounded-full text-base font-medium px-5 py-2.5 text-center mr-3 mb-3 dark:border-orange-500 dark:text-orange-500 dark:hover:text-white dark:hover:bg-orange-500 dark:bg-gray-900 dark:focus:ring-blue-800">Shoes</button>
@@ -16,7 +16,7 @@
 
                 @{
                     var i = 0;
-                   for(i=0;i<10;i++)
+                   for(i=0;i<20;i++)
                     {
                        <article class="relative flex flex-col overflow-hidden rounded-lg border">
                             <div class="aspect-square overflow-hidden">
@@ -27,7 +27,7 @@
                             </div>
                             <div class="my-4 mx-auto flex w-10/12 flex-col items-start justify-between">
                                 <div class="mb-2 flex">
-                                    <p class="mr-3 text-sm font-semibold">$99.00</p>
+                                    <p class="mr-3 text-sm font-semibold">$@i</p>
                                     <del class="text-xs text-gray-400"> $79.00 </del>
                                 </div>
                                 <h3 class="mb-2 text-sm text-gray-400">Fresh Apples</h3>
