@@ -8,5 +8,12 @@ namespace EcommerceApp.Controllers
         {
             return View();
         }
+
+        public IActionResult NewProduct()
+        {
+
+            return View();
+
+        }
     }
 }
