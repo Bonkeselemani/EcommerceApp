@@ -1,7 +1,7 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
-@Html.Partial("_Banner")
+<partial name="_Banner" />
 <div class="container mx-auto px-4 ">
     <div class=" flex items-center justify-center py-4 md:py-8 flex-wrap mx-auto p-4 ">
         <button type="button" class="text-orange-700 hover:text-white border border-orange-600 bg-white hover:bg-orange-700 focus:ring-4 focus:outline-none focus:ring-orange-300 rounded-full text-base font-medium px-5 py-2.5 text-center mr-3 mb-3 dark:border-orange-500 dark:text-orange-500 dark:hover:text-white dark:hover:bg-orange-500 dark:bg-gray-900 dark:focus:ring-blue-800">All categories</button>
@@ -32,10 +32,10 @@
                                 </div>
                                 <h3 class="mb-2 text-sm text-gray-400">Fresh Apples</h3>
                             </div>
-                            <button class="group mx-auto mb-2 flex h-10 w-10/12 items-stretch overflow-hidden rounded-md text-gray-600">
-                                <div class="flex w-full items-center justify-center bg-gray-100 text-xs uppercase transition group-hover:bg-orange-600 group-hover:text-white">Add</div>
+                            <a type="submit" asp-controller="Product" asp-action="AddCart" class="group mx-auto mb-2 flex h-10 w-10/12 items-stretch overflow-hidden rounded-md text-gray-600">
+                                <div   class="flex w-full items-center justify-center bg-gray-100 text-xs uppercase transition group-hover:bg-orange-600 group-hover:text-white">Add</div>
                                 <div class="flex items-center justify-center bg-gray-200 px-5 transition group-hover:bg-orange-500 group-hover:text-white">+</div>
-                            </button>
+                            </a>
                         </article>
                     }
                 }
